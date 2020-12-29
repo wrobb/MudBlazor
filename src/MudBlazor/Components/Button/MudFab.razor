@@ -12,7 +12,9 @@
             href="@Link"
             target="@Target"
             rel="@(Target=="_blank"?"noopener":null)"
-            disabled="@Disabled">
+            disabled="@Disabled"
+            onpointerdown="@(!DisableRipple ? "ripplet(arguments[0])" : "")">
+
     <span class="mud-fab-label">
         <MudIcon Icon="@Icon" Color="@IconColor"></MudIcon>
         @Label
